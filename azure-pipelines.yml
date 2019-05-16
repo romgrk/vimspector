@@ -16,6 +16,9 @@ jobs:
    - bash: $HOME/.local/bin/flake8 python3/
      displayName: "Run flake8"
 
+   - bash: $HOME/.local/bin/flake8 install_gadget.py
+     displayName: "Run flake8 on install scripts"
+
 - job: 'Vimscript'
   displayName: "Vimscript Lint"
   pool:
